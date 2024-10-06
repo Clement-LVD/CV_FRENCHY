@@ -6,7 +6,6 @@ output:
   html_document:
     self_contained: false
     md_extensions: -autolink_bare_uris
-    # css: styles.css
 ---
 
 ```{r write-pdf-cv, eval=FALSE, include=FALSE}
