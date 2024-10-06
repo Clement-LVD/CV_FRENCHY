@@ -1,0 +1,300 @@
+---
+title: "Clément LAVERDET"
+# author: "Psycho-sociologue, PhD."
+# date: "`r Sys.Date()`"
+output: 
+  html_document:
+    self_contained: false
+    md_extensions: -autolink_bare_uris
+    # css: styles.css
+---
+
+```{r write-pdf-cv, eval=FALSE, include=FALSE}
+
+# usethis::use_git_config(user.name="Clement-LVD", user.email="clementlvd@gmail.com")
+
+library(pagedown)
+
+doc <- rstudioapi::getActiveDocumentContext()$path
+message("Je vais knitter ", basename(doc) )
+
+rmarkdown::render(input = doc , output_format = "html_document" )  
+
+
+html_file <- gsub(x = basename(doc), pattern =  ".Rmd$", replacement =".html")
+# Imprimer le document HTML en PDF
+chrome_print(input = html_file,
+              options = list( 
+                preferCSSPageSize = TRUE,   # Utiliser les tailles de page CSS
+               margin = c(0, 0, 0, 0)  # Marges haut, droite, bas, gauche à 0
+             ), output = "CV_Clement_LVD.pdf")
+
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE )
+require(tidyverse)
+```
+
+```{r STYLES-DU-DOCUMENT, echo=FALSE, results='asis'}
+cat("
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 1px; /* Marges réduites */
+  text-align: justify; /* Justification du texte */
+  font-size: 10.5pt; /* Taille de police de base */
+}
+
+.job {background-color: WhiteSmoke; 
+border-top: 0.2px solid LightGray;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+
+.column1 {
+    flex: 0 0 15%; /* Colonne étroite de 10% */
+  padding: 0; /* Pas de padding */
+    border: 1px solid black; /* Bordure noire autour de la colonne */
+margin: 2px;
+  justify-content: flex-start; /* Aligne tout le contenu à gauche */
+}
+
+
+
+
+
+.column2 {
+  flex: 0 0 80%; /* Colonne large de 90% */
+  padding: 0; /* Pas de padding */
+  margin: 0px
+}
+
+
+.column3 {
+    flex: 0 0 30%; /* Colonne étroite de 30% */
+  padding: 0; /* Pas de padding */
+    border: 1px solid grey; /* Bordure noire autour de la colonne */
+margin: 2px;
+  justify-content: flex-start; /* Aligne tout le contenu à gauche */
+}
+
+.column7 {
+    flex: 0 0 70%; /* Colonne étroite de 70% */
+  padding: 0; /* Pas de padding */
+    border: 1px solid grey; /* Bordure noire autour de la colonne */
+margin: 2px;
+  justify-content: flex-start; /* Aligne tout le contenu à gauche */
+}
+
+ 
+h2 { font-size: 11pt; 
+  color: #2c3e50;
+}
+
+ul { /*list-style-type: '⏩';*/
+   list-style-type: none; 
+  padding: 0; 
+}
+
+li { font-family: Arial, sans-serif;
+  margin: 1px; /* Marges réduites */
+  padding-left: 2px;
+  text-align: justify; /* Justification du texte */
+  font-size: 8.5pt; /* Taille de police de base */
+}
+  
+</style>
+")
+
+```
+ 
+
+<div class="container">
+
+<div class="column1">
+
+- 📞 **06 33 22 31 65** 
+- **clementlvd\@gmail.com**
+- 🎂 34 ans  
+- 🏡 Bièvres - 91570
+- 🚗 Permis + Véhicule
+- 💂 Anglais (lu, écrit, parlé)
+
+
+</div>
+
+<div class="column2">
+-  *Psycho-sociologue, PhD.* 
+- Travaille en **R** avec **Rstudio** depuis 2014 (+ 10 ans d'exp.)
+- Analyses de données, programmées à 100%, en R et/ou en Python
+- Je suis expérimenté :
+-   - en conception de recherches psyscho-sociologiques ou d'enquêtes
+-   - en analyse d'enquêtes, mais aussi de textes, cartes, réseaux de relations, bases de données...
+-   - en restitution des résultats (rapports, articles, conférences, etc.)
+
+<!--
+- Actuellement Chef de la division des logements neufs, au sein du Bureau des Statistiques sur le Logement et la Construction du Commissariat Général au Développement Durable-->
+
+</div>
+
+</div>
+
+```{r textes, eval=FALSE, include=FALSE}
+cat("
+Ainsi, je réalise :
+
+- la refonte intégrale des méthodes de l'enquête ECLN (p. ex. modifications des formulations, re-organisation du travail, refonte des publications trimestrielles, ajout de nouveaux territoires et nouvelles formes de ventes immobilières dans le champ de l'enquête),
+- le pilotage de l'enquête au quotidien, incluant le management d'une équipe d'environ 80 personnes (management effectué *via* les chefs de pôle qui gèrent les gestionnaires et les enquêteurs), 
+- les publications trimestrielles et les réponses aux demandes en analyses de données (p. ex. bilan des achats de logements sociaux pour le compte du gouvernement, retour sur les données personnelles pour la CNIL, etc.)
+- les payes des enquêteurs (environ 50 personnes)
+- les poursuites des promoteurs immobiliers en non-réponse (31 promoteurs poursuivis en 2024),
+- l'organisation des séminaires et conférences (p. ex. formation des nouveaux arrivants à l'INSEE en ce qui concerne l'analyse du marché immobilier [...] et organisation du séminaire des équipes de l'enquête ECLN)
+- [...] 
+
+Rôle de * Lead Developer* en langage R + divers langages inter-opérants : 
+
+- Administrateur Cerbère du niveau national en ce qui concerne la base de données ECLN2 et le suivi de la commercialisation des logements neufs par le ministère, j'assure l'intégralité de la refonte des outils de production statistique et de pilotage de l'enquête ECLN (p. ex. plusieurs applications déployées en 2024 : publipostage relatif à l'enquête ECLN [+ de 600 lettres par trimestres], de réalisation des publications trimestrielles [2 articles écrits par trimestre + des notes sur des détails statistiques], application de calcul des payes, de déclenchement des procédures de contentieux, etc.)
+")
+
+```
+
+
+### 💼 Parcours professionnel 💼
+
+
+**💼 Depuis Janvier 2024** : <u>Chef de la division des logements neufs - *Ministère de la transition écologique*</u>
+
+- ⏩ **Direction de l'enquête ECLN de suivi trimestriel de la commercialisation des logements neufs** 
+- ⏩ **Rôle de 1^er^ méthodologiste, *data-engineer* et *lead-dev'* ** (création, déploiement et maintien d'outils informatiques en R)
+  - 🤴 Supervision d'une équipe de 3 chefs de pôles > encadrant 12 gestionnaires > encadrant 60 enquêteurs 
+  -  ✅ Réalisation des publications trimestrielles relatives à la commercialisation des logements neufs^[p. ex. chaque trimestre : publications d'indices comme l'indice du prix des logements neufs + 2 articles pour la presse et le site internet du ministère + diverses notes sur le redressement ou la non-réponse à l'enquête + des jeux de données agrégés et secrétisés en open-data]
+  - 🕵 Réponse aux demandes exceptionnelles en analyses de données sensibles^[p. ex. bilan du respect des engagements de l'État en matière d'acquisition de logements sociaux, réalisation de micro-analyses pour le compte des divisions chargées des comptes du logements et du bilan conjoncturel, notamment sur les acheteurs de logements neufs]
+  - 🤵 Assure la dimension législative^[p. ex. mise en place d'une procédure de contentieux [...] et poursuite en justice de 31 promoteurs ne délivrant pas les données demandées en 2024] et l'évolution méthodologique de l'enquête ECLN2^[p. ex. de refontes méthodologiques en cours : élargissement de l'enquête ECLN dans les DOM-TOM, intégration d'une catégorie "d'autres ventes" pour capter +33% du marché immobilier non-capté par l'enquête actuelle]
+  - 🐙 Gestion des 4 boîtes mails associées à ces activités, ouverture / animation de séminaires et conférences, etc.
+
+<div class='job'>
+**💼 2021 - 2023** :  <u>Chargé d'un projet de recherches - CDD 15 mois - *Univ. Gustave Eiffel (Versailles)*</u> 
+
+- ⏩ Analyses d'enquêtes, de littérature et de bases de données
+- ⏩ Rédacteur du rapport INTEREDP, publication scientifique et présentations en conférences internationales^[p. ex. présentation à la conférence de l'OCDE de bilan des accidents de la circulation en 2022 : www.itf-oecd.org/sites/default/files/repositories/typology_of_risky_situations.pdf]
+</div>
+ 
+**💼 2016 - 2020** : <u>Chargé d'enseignements et doctorant contractuel - CDD 3 ans - *UNÎMES*</u>
+
+- ⏩ Enseignements de niveaux licence à Master (psycho-sociologie, méthodes expérimentales, analyses statistiques)
+- ⏩ Recherches portant sur les méthodes d'un bilan des communications pendant les crises 
+
+<div class='job'>
+**💼 2016** : <u>Chargé de recherches - *Research internship* 8 mois - *Mairie d'Igny*</u>
+  
+  - ⏩ Mesure de l'influence intergénérationnelle suite à une intervention en milieu scolaire *(enseignants → enfants → parents)*
+  - ⏩ Bilan des éco-gestes réalisés par un panel d'habitants et aide au design de préventions adaptées
+</div>
+
+**💼 2015** : <u>Analyste de la base de données de recrutement - CDD 4 mois - *DRH de l'Armée de Terre*</u>
+</div>
+
+<div class="container"> 
+<div class="column3"> 
+
+### 🎓 Formations 🎓
+
+- **2024 → diverses formations INSEE** 
+  - (p. ex. gestion de la non-réponse, secrétisation, désaisonnalisation)
+- **2022 → Stanford University via edx.org ^[lien vers le certificat : https://courses.edx.org/certificates/07dd917be3654e058599574b3a1fa40e]**
+  - Bases de données relationnelles et SQL
+- **2021 → ED583 (UNÎMES & IMT Alès)** 
+  - Doctorat soutenu
+- **2015 → Univ. Paris V** 
+  - Master Psychologie sociale et environnementale 
+
+
+</div>
+
+<div class="column7">
+
+### 💻 Langages de programmation 💻
+
+```{r flextable-competences, echo=FALSE}
+suppressWarnings({suppressMessages({
+  
+require(flextable) 
+
+datas <- tibble::tribble(~Language, ~Compétence, ~Remarques, ~Expérience,
+                         
+ "R & Rstudio",   4.7,  "Mon outil préféré depuis plus de 10 ans", 2013
+ 
+, "Rshiny" , 4.2,  "P. ex. déploiement d'applications au CGDD (2024)", 2020
+
+,  "REGEX", 4.2, "J'utilise beaucoup les REGEX dans mes projets", 2016
+
+, "SQL", 4 , "Usage quasi-quotidien en 2024", 2020
+
+,  "HTML / CSS",  4, "P. ex. pour produire des documents .pdf ou du html comme ce CV", 2016
+
+, "Git", 4, "Synchronisation des codes avec Github", 2015
+
+, "Python", 3, "J'utilise plusieurs bibliothèques (p. ex. Panda, Spacy.io)", 2016
+
+ , "Autres", 2.7, "Notions d'autres langages comme VBA, Linux [...] GO et HuGO, etc.", 2016
+
+) %>% mutate(Expérience = paste0(year(today()) - Expérience, " ans") )
+
+
+ft <- flextable::flextable(datas, cwidth = c(1,0.85,6, 0.25))
+
+# Applique une barre de progression à la colonne "Compétences" en utilisant minibar
+ft <- compose(ft, j = "Compétence",
+              
+              value = as_paragraph( lollipop( width = 0.85,
+                                              value = datas$Compétence, 
+                                           max = 5)))
+  
+ ft <- flextable::fontsize(ft, part = "all", size = 9)
+ 
+ ft <- flextable::line_spacing(ft, space = 0.85) %>%
+  padding(padding = 0.75, part = "all") %>%
+   
+   flextable::align(j = c(1, 4), align = "right" ) %>% 
+   
+   flextable::bold(j = 1, part = "all") %>%  
+   
+   flextable::align(part = "header", j = c(1:3), align = "center")
+ 
+}) })
+
+ft
+ 
+```
+
+
+</div> 
+
+</div>
+
+### ⣿ Principales publications scientifiques ⣿
+  
+- 🧾 Electric Personal Mobility Device Driver Behaviors, Their Antecedents and Consequences: A Narrative Review, *in* *Journal of Safety Research, Volume 87* (2023). https://doi.org/10.1016/j.jsr.2023.07.006
+
+- 🕮 'Crisis' (Chapitre), *in* 100 Key Concepts in Environmental Psychology, pp. 28-30, Routledge / Taylor & Francis (2023)
+
+- 🕮 'Crises' (Chapitre), *in* Psychologie environnementale : 100 notions clés, pp. 74-77, *Univers Psy* / Dunod. (2022) EAN: 9782100828289
+
+- 🕮 Relations publiques et exploitation des réseaux sociaux numériques en gestion des crises : quels rôles de Facebook pour les gestionnaires français et comment exploiter ce canal de façon pertinente ? (Thèse), *PUF* (2021) https://tel.archives-ouvertes.fr/tel-03457426/file/74433_LAVERDET_2021_archivage.pdf
+
+- 🕮 Entraînement numérique pour les autorités: qualifier la meilleure façon de communiquer (Chapitre), *in* *Prise de décision en situation de crise: recherche et innovations pour une formation optimale* / Wiley (2019)
+
+
+- 🕮 What is the Best Way to Communicate During a Crisis ? (Chapitre), *in* *Decision‐making in Crisis Situations: Research and Innovation for Optimal Training* / Wiley, pp. 149-173. https://doi.org/10.1002/9781119557869.ch7 (2018)
+
+
+- 🕮 Integrating Anthropocentric Approaches into Flood Risk Management (Chapitre), *in* *Floods - Volume 2 - Risk Management* / ISTE, pp. 157-170. https://doi.org/10.1016/B978‑1‑78548‑269‑4.50011‑1 (2017)
+
+### Notes de la section "Parcours professionnel"
