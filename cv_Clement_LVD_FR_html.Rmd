@@ -133,10 +133,10 @@ li { font-family: Arial, sans-serif;
 -  *Psycho-sociologue, PhD.* 
 - Travaille en **R** avec **Rstudio** depuis 2014 (+ 10 ans d'exp.)
 - Analyses de données, programmées à 100%, en R et/ou en Python
-- Je suis expérimenté :
--   - en conception de recherches psyscho-sociologiques ou d'enquêtes
--   - en analyse d'enquêtes, mais aussi de textes, cartes, réseaux de relations, bases de données...
--   - en restitution des résultats (rapports, articles, conférences, etc.)
+- Je suis expérimenté en :
+  - 🕵 **conception de recherches** psycho-sociologiques ou d'enquêtes
+  - 💻 **analyses programmées** d'enquêtes, de textes, cartes, réseaux de relations, bases de données...
+  - 📝 **restitutions** des résultats avec des rapports, articles, conférences, etc.
 
 <!--
 - Actuellement Chef de la division des logements neufs, au sein du Bureau des Statistiques sur le Logement et la Construction du Commissariat Général au Développement Durable-->
@@ -181,7 +181,7 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 <div class='job'>
 **💼 2021 - 2023** :  <u>Chargé d'un projet de recherches - CDD 15 mois - *Univ. Gustave Eiffel (Versailles)*</u> 
 
-- ⏩ Analyses d'enquêtes, de littérature et de bases de données
+- ⏩ Analyses d'enquêtes, de littérature et de bases de données sur les accidents routiers (p. ex. base d'accidents recensés par la police)
 - ⏩ Rédacteur du rapport INTEREDP, publication scientifique et présentations en conférences internationales^[p. ex. présentation à la conférence de l'OCDE de bilan des accidents de la circulation en 2022 : www.itf-oecd.org/sites/default/files/repositories/typology_of_risky_situations.pdf]
 </div>
  
