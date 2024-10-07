@@ -93,8 +93,11 @@ margin: 2px;
 }
 
  
-h2 { font-size: 11pt; 
-  color: #2c3e50;
+h2 { font-size: 14pt;
+text-align: left;
+font-weight:bold;
+margin-top: 10px; 
+  color: #2c3e50; 
 }
 
 ul { /*list-style-type: '⏩';*/
@@ -134,9 +137,9 @@ li { font-family: Arial, sans-serif;
 - Travaille en **R** avec **Rstudio** depuis 2014 (+ 10 ans d'exp.)
 - Analyses de données, programmées à 100%, en R et/ou en Python
 - Je suis expérimenté en :
-  - 🕵 **conception de recherches** psycho-sociologiques ou d'enquêtes
-  - 💻 **analyses programmées** d'enquêtes, de textes, cartes, réseaux de relations, bases de données...
-  - 📝 **restitutions** des résultats avec des rapports, articles, conférences, etc.
+  - 🕵 **Conception de recherches** psycho-sociologiques ou d'enquêtes
+  - 💻 **Analyses programmées** (enquêtes, textes, cartes, réseaux de relations, bases de données, etc.)
+  - 📝 **Restitutions** des résultats avec des rapports, articles, conférences, etc.
 
 <!--
 - Actuellement Chef de la division des logements neufs, au sein du Bureau des Statistiques sur le Logement et la Construction du Commissariat Général au Développement Durable-->
@@ -165,45 +168,48 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 ```
 
 
-### 💼 Parcours professionnel 💼
+## 💼 Parcours professionnel 💼
 
 
-**💼 Depuis Janvier 2024** : <u>Chef de la division des logements neufs - *Ministère de la transition écologique*</u>
+**💼 Depuis Janvier 2024** : <b>Chef de la division des logements neufs - *Ministère de la transition écologique*</b>
 
 - ⏩ **Direction de l'enquête ECLN de suivi trimestriel de la commercialisation des logements neufs** 
 - ⏩ **Rôle de 1^er^ méthodologiste, *data-engineer* et *lead-dev'* ** (création, déploiement et maintien d'outils informatiques en R)
-  - 🤴 Supervision d'une équipe de 3 chefs de pôles > encadrant 12 gestionnaires > encadrant 60 enquêteurs 
-  -  ✅ Réalisation des publications trimestrielles relatives à la commercialisation des logements neufs^[p. ex. chaque trimestre : publications d'indices comme l'indice du prix des logements neufs + 2 articles pour la presse et le site internet du ministère + diverses notes sur le redressement ou la non-réponse à l'enquête + des jeux de données agrégés et secrétisés en open-data]
+  - 🤴 Supervision de l'enquête ECLN et d'une équipe de 3 chefs de pôles, 12 gestionnaires et 60 enquêteurs 
+  - 👮 Administrateur de la base ECLN2 en postgreSQL (gestion des accès, contrôles de cohérence, réponse aux demandes, etc.)
+  - 📝 Réalisation des publications trimestrielles relatives à la commercialisation des logements neufs et des notes relatives à l'enquête^[p. ex. chaque trimestre : publications d'indices comme l'indice du prix des logements neufs + 2 articles pour la presse et le site internet du ministère + diverses notes sur le redressement ou la non-réponse à l'enquête + des jeux de données agrégés et secrétisés en open-data]
   - 🕵 Réponse aux demandes exceptionnelles en analyses de données sensibles^[p. ex. bilan du respect des engagements de l'État en matière d'acquisition de logements sociaux, réalisation de micro-analyses pour le compte des divisions chargées des comptes du logements et du bilan conjoncturel, notamment sur les acheteurs de logements neufs]
-  - 🤵 Assure la dimension législative^[p. ex. mise en place d'une procédure de contentieux [...] et poursuite en justice de 31 promoteurs ne délivrant pas les données demandées en 2024] et l'évolution méthodologique de l'enquête ECLN2^[p. ex. de refontes méthodologiques en cours : élargissement de l'enquête ECLN dans les DOM-TOM, intégration d'une catégorie "d'autres ventes" pour capter +33% du marché immobilier non-capté par l'enquête actuelle]
-  - 🐙 Gestion des 4 boîtes mails associées à ces activités, ouverture / animation de séminaires et conférences, etc.
+  - 🤵 Assure la dimension législative^[p. ex. interlocuteur de la CNIL [...] mise en place d'une procédure de poursuite en justice de 31 promoteurs ne délivrant pas les données demandées en 2024] et l'évolution méthodologique de l'enquête ECLN^[p. ex. correction d'erreurs ; automatisation de la valorisation des résultats ; modifications de procédures ; intégration d'une catégorie "d'autres ventes" pour capter +33% du marché immobilier non-capté par l'enquête actuelle]
+  - 🐙 Et d'autres tâches (gestion des 4 boîtes mails associées à ces activités, animation de séminaires et conférences, veille du marché, etc.)
 
 <div class='job'>
-**💼 2021 - 2023** :  <u>Chargé d'un projet de recherches - CDD 15 mois - *Univ. Gustave Eiffel (Versailles)*</u> 
+**💼 2021 - 2023** :  <b>Chargé d'un projet de recherches - CDD 15 mois - *Univ. Gustave Eiffel (Versailles)*</b> 
 
 - ⏩ Analyses d'enquêtes, de littérature et de bases de données sur les accidents routiers (p. ex. base d'accidents recensés par la police)
 - ⏩ Rédacteur du rapport INTEREDP, publication scientifique et présentations en conférences internationales^[p. ex. présentation à la conférence de l'OCDE de bilan des accidents de la circulation en 2022 : www.itf-oecd.org/sites/default/files/repositories/typology_of_risky_situations.pdf]
 </div>
  
-**💼 2016 - 2020** : <u>Chargé d'enseignements et doctorant contractuel - CDD 3 ans - *UNÎMES*</u>
+**💼 2016 - 2020** : <b>Chargé d'enseignements et doctorant contractuel - CDD 3 ans - *UNÎMES*</b>
 
 - ⏩ Enseignements de niveaux licence à Master (psycho-sociologie, méthodes expérimentales, analyses statistiques)
-- ⏩ Recherches portant sur les méthodes d'un bilan des communications pendant les crises 
+- ⏩ Recherches portant sur les méthodes d'un bilan des communications pendant les crises (p. ex. analyse massive de Facebook)
 
 <div class='job'>
-**💼 2016** : <u>Chargé de recherches - *Research internship* 8 mois - *Mairie d'Igny*</u>
+**💼 2015** : <b>Chargé de recherches - *Research internship* 8 mois - *Mairie d'Igny*</b>
   
   - ⏩ Mesure de l'influence intergénérationnelle suite à une intervention en milieu scolaire *(enseignants → enfants → parents)*
   - ⏩ Bilan des éco-gestes réalisés par un panel d'habitants et aide au design de préventions adaptées
 </div>
 
-**💼 2015** : <u>Analyste de la base de données de recrutement - CDD 4 mois - *DRH de l'Armée de Terre*</u>
+**💼 2014** : <b>Analyste de la base de données de recrutement - CDD 4 mois - *DRH de l'Armée de Terre*</b>
+
+  - ⏩ Analyses de la qualité psychométrique des tests de recrutement et des facteurs conduisant à la démission des soldats
 </div>
 
 <div class="container"> 
 <div class="column3"> 
 
-### 🎓 Formations 🎓
+## 🎓 Formations 🎓
 
 - **2024 → diverses formations INSEE** 
   - (p. ex. gestion de la non-réponse, secrétisation, désaisonnalisation)
@@ -219,7 +225,7 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 
 <div class="column7">
 
-### 💻 Langages de programmation 💻
+## 💻 Langages de programmation 💻
 
 ```{r flextable-competences, echo=FALSE}
 suppressWarnings({suppressMessages({
@@ -247,12 +253,12 @@ datas <- tibble::tribble(~Language, ~Compétence, ~Remarques, ~Expérience,
 ) %>% mutate(Expérience = paste0(year(today()) - Expérience, " ans") )
 
 
-ft <- flextable::flextable(datas, cwidth = c(1,0.85,6, 0.25))
+ft <- flextable::flextable(datas, cwidth = c(1,1,6, 0.25))
 
 # Applique une barre de progression à la colonne "Compétences" en utilisant minibar
 ft <- compose(ft, j = "Compétence",
               
-              value = as_paragraph( lollipop( width = 0.85,
+              value = as_paragraph( lollipop( width = 0.9,
                                               value = datas$Compétence, 
                                            max = 5)))
   
@@ -278,7 +284,7 @@ ft
 
 </div>
 
-### ⣿ Principales publications scientifiques ⣿
+## ⣿ Principales publications scientifiques ⣿
   
 - 🧾 Electric Personal Mobility Device Driver Behaviors, Their Antecedents and Consequences: A Narrative Review, *in* *Journal of Safety Research, Volume 87* (2023). https://doi.org/10.1016/j.jsr.2023.07.006
 
@@ -295,5 +301,12 @@ ft
 
 
 - 🕮 Integrating Anthropocentric Approaches into Flood Risk Management (Chapitre), *in* *Floods - Volume 2 - Risk Management* / ISTE, pp. 157-170. https://doi.org/10.1016/B978‑1‑78548‑269‑4.50011‑1 (2017)
+
+<!--
+### Projets Gérés en Langage R
+  
+- ✅ Refonte des outils du ministère et factorisation intégrale : grâce à moi, la division du logement neuf bénéficie de fonctions modulaires en R, accouplées à une architecture de programme de bureautique réalisée également en R. Ces fonctions permettent notamment de déployer aisément des applications shiny, ou encore un meilleur accès aux données de l'enquête, une meilleure gestion de la base (p. ex. automatisation des contrôles pré- et post-clôture de l'enquête) et diverses tâches automatisées (p. ex. automatisation de la publication des résultats *ex-nihilo*, meilleur enclenchement de l'enquête, calcul des payes, méthodes de contentieux, clôture, etc.)
+  
+- ✅ Toutes mes recherches et publications sont réalisées en R (p. ex. thèse réalisée et rédigée 100% avec R), les résultats des enquêtes étantgénéralement saisis sur Limesurvey.-->
 
 ### Notes de la section "Parcours professionnel"
