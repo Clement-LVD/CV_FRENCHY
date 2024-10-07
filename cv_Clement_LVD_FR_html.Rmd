@@ -309,4 +309,4 @@ ft
   
 - ✅ Toutes mes recherches et publications sont réalisées en R (p. ex. thèse réalisée et rédigée 100% avec R), les résultats des enquêtes étantgénéralement saisis sur Limesurvey.-->
 
-### Notes de la section "Parcours professionnel"
+### Notes des sections "Parcours professionnel" ou "Formations"
