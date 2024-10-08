@@ -1,6 +1,6 @@
 ---
 title: "Clément LAVERDET"
-# author: "Psycho-sociologue, PhD."
+# author: "Chargé d'études / ingénieur de recherches"
 # date: "`r Sys.Date()`"
 output: 
   html_document:
@@ -47,13 +47,13 @@ body {
 }
 
 .job {background-color: WhiteSmoke; 
-border-top: 0.2px solid LightGray;
+border-top: 0.1px solid LightGray;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: -2px;
 }
 
 
@@ -69,7 +69,7 @@ margin: 2px;
 
 
 
-.column2 {
+.column2 {font-size: 12pt;
   flex: 0 0 80%; /* Colonne large de 90% */
   padding: 0; /* Pas de padding */
   margin: 0px
@@ -120,6 +120,20 @@ li { font-family: Arial, sans-serif;
 
 <div class="container">
 
+<div class="column2">
+-  **Chargé d'études / ingénieur de recherches. Psycho-sociologue, PhD.** 
+- Travaille en **R** avec **Rstudio** depuis 2014 (+ 10 ans d'exp.)
+- Analyses de données, programmées à 100%, en R et/ou en Python
+- Je suis expérimenté en :
+  - 🕵 **Conception de recherches** psycho-sociologiques ou d'enquêtes
+  - 💻 **Analyses programmées** (enquêtes, textes, cartes, réseaux de relations, bases de données, etc.)
+  - 📝 **Restitutions** des résultats avec des rapports, articles, conférences, etc.
+
+<!--
+- Actuellement Chef de la division des logements neufs, au sein du Bureau des Statistiques sur le Logement et la Construction du Commissariat Général au Développement Durable-->
+
+</div>
+
 <div class="column1">
 
 - 📞 **06 33 22 31 65** 
@@ -132,19 +146,6 @@ li { font-family: Arial, sans-serif;
 
 </div>
 
-<div class="column2">
--  *Psycho-sociologue, PhD.* 
-- Travaille en **R** avec **Rstudio** depuis 2014 (+ 10 ans d'exp.)
-- Analyses de données, programmées à 100%, en R et/ou en Python
-- Je suis expérimenté en :
-  - 🕵 **Conception de recherches** psycho-sociologiques ou d'enquêtes
-  - 💻 **Analyses programmées** (enquêtes, textes, cartes, réseaux de relations, bases de données, etc.)
-  - 📝 **Restitutions** des résultats avec des rapports, articles, conférences, etc.
-
-<!--
-- Actuellement Chef de la division des logements neufs, au sein du Bureau des Statistiques sur le Logement et la Construction du Commissariat Général au Développement Durable-->
-
-</div>
 
 </div>
 
@@ -168,19 +169,19 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 ```
 
 
-## 💼 Parcours professionnel 💼
+## 💼 Parcours professionnel
 
 
 **💼 Depuis Janvier 2024** : <b>Chef de la division des logements neufs - *Ministère de la transition écologique*</b>
 
 - ⏩ **Direction de l'enquête ECLN de suivi trimestriel de la commercialisation des logements neufs** 
 - ⏩ **Rôle de 1^er^ méthodologiste, *data-engineer* et *lead-dev'* ** (création, déploiement et maintien d'outils informatiques en R)
-  - 🤴 Supervision de l'enquête ECLN et d'une équipe de 3 chefs de pôles, 12 gestionnaires et 60 enquêteurs 
-  - 👮 Administrateur de la base ECLN2 en postgreSQL (gestion des accès, contrôles de cohérence, réponse aux demandes, etc.)
-  - 📝 Réalisation des publications trimestrielles relatives à la commercialisation des logements neufs et des notes relatives à l'enquête^[p. ex. chaque trimestre : publications d'indices comme l'indice du prix des logements neufs + 2 articles pour la presse et le site internet du ministère + diverses notes sur le redressement ou la non-réponse à l'enquête + des jeux de données agrégés et secrétisés en open-data]
-  - 🕵 Réponse aux demandes exceptionnelles en analyses de données sensibles^[p. ex. bilan du respect des engagements de l'État en matière d'acquisition de logements sociaux, réalisation de micro-analyses pour le compte des divisions chargées des comptes du logements et du bilan conjoncturel, notamment sur les acheteurs de logements neufs]
-  - 🤵 Assure la dimension législative^[p. ex. interlocuteur de la CNIL [...] mise en place d'une procédure de poursuite en justice de 31 promoteurs ne délivrant pas les données demandées en 2024] et l'évolution méthodologique de l'enquête ECLN^[p. ex. correction d'erreurs de programmation et amélioration des procédures ; automatisation de la production comme les articles publiés chaque trimestre ; et autres refontes globales de l'enquête, comme l'intégration d'une catégorie "d'autres ventes" pour capter +33% du marché immobilier]
-  - 🐙 Et d'autres tâches (gestion des 4 boîtes mails associées à ces activités, animation de séminaires et conférences, veille du marché, etc.)
+  -   🤴 Supervision de l'enquête ECLN et d'une équipe de 3 chefs de pôles, 12 gestionnaires et 60 enquêteurs 
+  -   👮 Administrateur de la base ECLN2 en postgreSQL (gestion des accès, contrôles de cohérence, réponse aux demandes, etc.)
+  -   📝 Réalisation des publications trimestrielles relatives à la commercialisation des logements neufs et des notes relatives à l'enquête^[p. ex. chaque trimestre : publications d'indices comme l'indice du prix des logements neufs + 2 articles pour la presse et le site internet du ministère + diverses notes sur le redressement ou la non-réponse à l'enquête + des jeux de données agrégés et secrétisés en open-data]
+  -   🕵 Réponse aux demandes exceptionnelles en analyses de données sensibles^[p. ex. bilan du respect des engagements de l'État en matière d'acquisition de logements sociaux, réalisation de micro-analyses pour le compte des divisions chargées des comptes du logements et du bilan conjoncturel, notamment sur les acheteurs de logements neufs]
+  -   🤵 Assure la dimension législative^[p. ex. interlocuteur de la CNIL [...] mise en place d'une procédure de poursuite en justice de 31 promoteurs ne délivrant pas les données demandées en 2024] et l'évolution méthodologique de l'enquête ECLN^[p. ex. correction d'erreurs de programmation et amélioration des procédures ; automatisation de la production comme les articles publiés chaque trimestre ; et autres refontes globales de l'enquête, comme l'intégration d'une catégorie "d'autres ventes" pour capter +33% du marché immobilier]
+  -   🐙 Et d'autres tâches (gestion des 4 boîtes mails associées à ces activités, animation de séminaires, conférences, veille, etc.)
 
 <div class='job'>
 **💼 2021 - 2023** :  <b>Chargé d'un projet de recherches - CDD 15 mois - *Univ. Gustave Eiffel (Versailles)*</b> 
@@ -189,10 +190,12 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 - ⏩ Rédacteur du rapport INTEREDP, publication scientifique et présentations en conférences internationales^[p. ex. présentation à la conférence de l'OCDE de bilan des accidents de la circulation en 2022 : www.itf-oecd.org/sites/default/files/repositories/typology_of_risky_situations.pdf]
 </div>
  
+<div class='job'>
 **💼 2016 - 2020** : <b>Chargé d'enseignements et doctorant contractuel - CDD 3 ans - *UNÎMES*</b>
 
 - ⏩ Enseignements de niveaux licence à Master (psycho-sociologie, méthodes expérimentales, analyses statistiques)
 - ⏩ Recherches portant sur les méthodes d'un bilan des communications pendant les crises (p. ex. analyse massive de Facebook)
+</div>
 
 <div class='job'>
 **💼 2015** : <b>Chargé de recherches - *Research internship* 8 mois - *Mairie d'Igny*</b>
@@ -209,7 +212,7 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 <div class="container"> 
 <div class="column3"> 
 
-## 🎓 Formations 🎓
+## 🎓 Formations
 
 - **2024 → diverses formations INSEE** 
   - (p. ex. gestion de la non-réponse, secrétisation, désaisonnalisation)
@@ -225,7 +228,7 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 
 <div class="column7">
 
-## 💻 Langages de programmation 💻
+## 💻 Langages de programmation
 
 ```{r flextable-competences, echo=FALSE}
 suppressWarnings({suppressMessages({
