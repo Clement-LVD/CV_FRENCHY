@@ -198,15 +198,17 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 </div>
 
 <div class='job'>
-**💼 2015** : <b>Chargé de recherches - *Research internship* 8 mois - *Mairie d'Igny*</b>
+**💼 2015** : <b>Chargé d'études - *Research internship* 8 mois - *Mairie d'Igny*</b>
   
   - ⏩ Mesure de l'influence intergénérationnelle suite à une intervention en milieu scolaire *(enseignants → enfants → parents)*
   - ⏩ Bilan des éco-gestes réalisés par un panel d'habitants et aide au design de préventions adaptées
 </div>
 
-**💼 2014** : <b>Analyste de la base de données de recrutement - CDD 4 mois - *DRH de l'Armée de Terre*</b>
+<div class='job'>
+**💼 2014** : <b>Chargé d'études RH - CDD 4 mois - *DRH de l'Armée de Terre*</b>
 
-  - ⏩ Analyses de la qualité psychométrique des tests de recrutement et des facteurs conduisant à la démission des soldats
+  - ⏩ Analyses de la qase de recrutement (p. ex. qualité psychométrique des tests , facteurs conduisant à la démission des soldats)
+</div>
 </div>
 
 <div class="container"> 
@@ -214,13 +216,15 @@ Rôle de * Lead Developer* en langage R + divers langages inter-opérants :
 
 ## 🎓 Formations
 
-- **2024 → diverses formations INSEE** 
+- ✅ **2024 Diverses formations INSEE** 
   - (p. ex. gestion de la non-réponse, secrétisation, désaisonnalisation)
-- **2022 → Stanford University via edx.org ^[lien vers le certificat : https://courses.edx.org/certificates/07dd917be3654e058599574b3a1fa40e]**
-  - Bases de données relationnelles et SQL
-- **2021 → ED583 (UNÎMES & IMT Alès)** 
+  -   
+- ✅ **2022 Stanford University via edx.org ^[lien vers le certificat : https://courses.edx.org/certificates/07dd917be3654e058599574b3a1fa40e]**
+  - Bases de données et SQL
+  -   
+- ✅ **2021 ED583 (UNÎMES & IMT Alès)** 
   - Doctorat soutenu
-- **2015 → Univ. Paris V** 
+- ✅ **2015 Univ. Paris V** 
   - Master Psychologie sociale et environnementale 
 
 
@@ -251,7 +255,9 @@ datas <- tibble::tribble(~Language, ~Compétence, ~Remarques, ~Expérience,
 
 , "Python", 3, "J'utilise plusieurs bibliothèques (p. ex. Panda, Spacy.io)", 2016
 
- , "Autres", 2.7, "Notions d'autres langages comme VBA, Linux [...] GO et HuGO, etc.", 2016
+ , "Autres", 2.7, "Notions de VBA, Linux [...] GO et HuGO, etc.", 2016,
+
+"Suite Microsoft", 4.8, "Utilisateur avancé, notamment d'Excel (p. ex. VBA, PowerQuery, PowerBi, PowerPivot)", 2010
 
 ) %>% mutate(Expérience = paste0(year(today()) - Expérience, " ans") )
 
@@ -287,7 +293,7 @@ ft
 
 </div>
 
-## ⣿ Principales publications scientifiques ⣿
+## ⣿ Principales publications scientifiques
   
 - 🧾 Electric Personal Mobility Device Driver Behaviors, Their Antecedents and Consequences: A Narrative Review, *in* *Journal of Safety Research, Volume 87* (2023). https://doi.org/10.1016/j.jsr.2023.07.006
 
@@ -306,10 +312,10 @@ ft
 - 🕮 Integrating Anthropocentric Approaches into Flood Risk Management (Chapitre), *in* *Floods - Volume 2 - Risk Management* / ISTE, pp. 157-170. https://doi.org/10.1016/B978‑1‑78548‑269‑4.50011‑1 (2017)
 
 <!--
-### Projets Gérés en Langage R
+### Brouillons : Projets Gérés en Langage R
   
 - ✅ Refonte des outils du ministère et factorisation intégrale : grâce à moi, la division du logement neuf bénéficie de fonctions modulaires en R, accouplées à une architecture de programme de bureautique réalisée également en R. Ces fonctions permettent notamment de déployer aisément des applications shiny, ou encore un meilleur accès aux données de l'enquête, une meilleure gestion de la base (p. ex. automatisation des contrôles pré- et post-clôture de l'enquête) et diverses tâches automatisées (p. ex. automatisation de la publication des résultats *ex-nihilo*, meilleur enclenchement de l'enquête, calcul des payes, méthodes de contentieux, clôture, etc.)
   
 - ✅ Toutes mes recherches et publications sont réalisées en R (p. ex. thèse réalisée et rédigée 100% avec R), les résultats des enquêtes étantgénéralement saisis sur Limesurvey.-->
 
-### Notes des sections "Parcours professionnel" ou "Formations"
+### ⣿ Notes des sections "Parcours professionnel" ou "Formations"
